@@ -3,35 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Chuyên Nghiệp</title>
+    <title>Giới Thiệu Bản Thân</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Website Chuyên Nghiệp</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Giới thiệu</a></li>
-                <li><a href="#services">Dịch vụ</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <img src="https://cdn.jsdelivr.net/gh/anthoncode/hosting-image@main/logo-blue.svg" alt="Logo Cá Nhân">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Trang Chủ</a></li>
+                        <li><a href="#about">Về Tôi</a></li>
+                        <li><a href="#skills">Kỹ Năng</a></li>
+                        <li><a href="#portfolio">Dự Án</a></li>
+                        <li><a href="#contact">Liên Hệ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    <section id="about">
-        <h2>Về chúng tôi</h2>
-        <p>Chúng tôi cung cấp các giải pháp chuyên nghiệp để giúp bạn phát triển doanh nghiệp của mình.</p>
-    </section>
-    <section id="services">
-        <h2>Dịch vụ</h2>
-        <p>Các dịch vụ chất lượng cao phù hợp với nhu cầu của bạn.</p>
-    </section>
-    <section id="contact">
-        <h2>Liên hệ</h2>
-        <p>Email: contact@website.com</p>
-        <p>Hotline: 0123 456 789</p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Website Chuyên Nghiệp. All Rights Reserved.</p>
-    </footer>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Xin Chào, Tôi Là Vũ Hồng Phương</h1>
+                    <p>Nhà phát triển web & đam mê công nghệ, sẵn sàng tạo ra những sản phẩm sáng tạo.</p>
+                    <div class="hero-cta">
+                        <a href="#portfolio" class="btn btn-primary">
+                            <i class="fas fa-briefcase"></i> Xem Dự Án
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Liên Hệ Ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Về Tôi</h2>
+                    <p>Tôi là một lập trình viên với niềm đam mê sáng tạo, xây dựng những sản phẩm tối ưu và độc đáo.</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="F:\picture download\wallpaper\001.png" alt="Chân Dung Cá Nhân">
+                    </div>
+                    <div class="about-text">
+                        <h3>Định Hướng & Tầm Nhìn</h3>
+                        <p>Với kinh nghiệm trong lĩnh vực lập trình web và phát triển sản phẩm, tôi luôn tìm kiếm cơ hội để mang lại giá trị cao nhất cho khách hàng.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Kỹ Năng</h2>
+                </div>
+                <ul class="skills-list">
+                    <li><i class="fas fa-code"></i> HTML, CSS, JavaScript</li>
+                    <li><i class="fas fa-laptop-code"></i> React, Vue.js</li>
+                    <li><i class="fas fa-database"></i> MySQL, MongoDB</li>
+                    <li><i class="fas fa-server"></i> Node.js, Spring Boot</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Dự Án Nổi Bật</h2>
+                </div>
+                <div class="portfolio-gallery">
+                    <div class="project-card">
+                        <img src="https://cdn.jsdelivr.net/gh/anthoncode/hosting-image@main/service-digital.jpg" alt="Dự Án 1">
+                        <h3>Website Thương Mại Điện Tử</h3>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://cdn.jsdelivr.net/gh/anthoncode/hosting-image@main/service-training.jpg" alt="Dự Án 2">
+                        <h3>Ứng Dụng Quản Lý Công Việc</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
